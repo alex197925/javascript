@@ -6,3 +6,6 @@
   What parameter do we pass to this function?
 * What does the function 'wrapWithTag' do? 
   Why are the parameters placed between brackets?
+
+````
+1. Its was replaced with arrow function.
