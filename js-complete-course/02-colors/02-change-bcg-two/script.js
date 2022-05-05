@@ -11,10 +11,22 @@
 
 
 
-function changeColor () {
-    let input = document.getElementsById("color").value
-    let button = document.getElementById("run")
-}
+
+let runButton = document.getElementById("run")
+
+
+
+runButton.addEventListener("click", function () {
+    let colorInput = document.getElementById("color")
+  document.body.style.backgroundColor = colorInput.value
+
+})
+
+
+
+
+
+
 
 
 
