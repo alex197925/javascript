@@ -11,6 +11,12 @@
 
 (function() {
 
+    let question = prompt("Do you want some cake?", "")
   // your code here
+if(question.toLowerCase() == "yes") {
+    alert('Congrats');
+} else {
+    alert("More cake for me then :p !")
+}
 
 })();

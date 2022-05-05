@@ -9,8 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function reset () {
 
     // your code here
+    let age = prompt("How old are you?")
+    let gender = prompt("What is your gender?")
+    let city = prompt("Where you living, city?")
+    let data = confirm(`"So you are ${age} years old!  Are you ${gender}! You live in ${city}!`)
+
+if(data == true) {
+alert("good")
+  }else {
+  reset()
+}
 
 })();

@@ -12,5 +12,9 @@
 (function() {
 
     // your code here
+    let userName = prompt("What is your name?", "")
+
+    alert("Hello " + userName + "!")
+
 
 })();
