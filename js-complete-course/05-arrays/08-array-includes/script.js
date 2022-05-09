@@ -27,5 +27,12 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        if(fruits.indexOf("apple")!==-1){
+            console.log("apple is here")
+        }else {
+            console.log("apple not here")
+        }
+    })
 
 })();
