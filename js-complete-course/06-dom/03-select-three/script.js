@@ -12,5 +12,13 @@
 (function() {
 
     // your code here
+   const elements = document.querySelectorAll("p.target")
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].innerHTML = "owned"
+    }
+
+
+
+    console.log(elements)
 
 })();
