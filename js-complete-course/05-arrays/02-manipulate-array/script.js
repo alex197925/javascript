@@ -25,5 +25,12 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function (){
+        const removeFirst =  fruits.shift()
+        const removeLast = fruits.pop()
+        const addFirst = fruits.unshift("banana")
+            const addToTheEnd = fruits.push("kiwi")
+        console.log(fruits)
+    })
 
 })();
