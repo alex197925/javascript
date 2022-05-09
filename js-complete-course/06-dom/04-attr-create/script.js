@@ -12,5 +12,15 @@
 (function() {
 
     // your code here
+  const imgId = document.getElementById("source")
+  const getImgAtribut = imgId.getAttribute("data-image")
+  const figure = document.getElementById("target");
+
+
+  let newImageElement = document.createElement("img")
+  newImageElement.src = getImgAtribut
+
+figure.appendChild(newImageElement)
+
 
 })();
