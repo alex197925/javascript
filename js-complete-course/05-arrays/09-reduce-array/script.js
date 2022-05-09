@@ -91,4 +91,13 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function () {
+        let peoples = people.reduce((acc, peo) => {
+            return acc + peo.age
+        }, 0); // Take notice of last argument is a number
+        console.log("Total age", peoples);
+    })
 })();
+
+
+
