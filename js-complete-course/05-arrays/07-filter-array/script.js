@@ -90,5 +90,10 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function (){
+if(age => 18) {
+    console.log(people)
+}
+    })
 
 })();
