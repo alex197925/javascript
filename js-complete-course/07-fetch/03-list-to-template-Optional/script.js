@@ -1,17 +1,14 @@
 /* becode/javascript
  *
- * /06-dom/01-select-one/script.js - 6.1: sélection par id
+ * /09-fetch/02-list-to-template/script.js - 11.2: liste vers template
  *
  * coded by leny@BeCode
- * started at 26/10/2018
+ * started at 12/05/2019
  */
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
+(() => {
     // your code here
-    document.getElementById("target").innerText = "owned"
-
 })();
