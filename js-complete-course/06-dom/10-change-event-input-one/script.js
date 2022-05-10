@@ -12,5 +12,28 @@
 (function() {
 
     // your code here
+const input = document.getElementById("pass-one")
+const span = document.getElementById("counter")
+
+
+
+  input.addEventListener('change', function() {
+   let value = input.value
+      let long = value.length
+      span.textContent = `${passwordLength}/10`;
+  });
+
+
+    // const passwordInput = document.getElementById("pass-one");
+    // const counter = document.getElementById("counter");
+    //
+    // passwordInput.addEventListener("keyup", updateCounter);
+    //
+    // function updateCounter() {
+    //     let passwordValue = passwordInput.value;
+    //     let passwordLength = passwordValue.length;
+    //
+    //     counter.textContent = `${passwordLength}/10`;
+    // }
 
 })();

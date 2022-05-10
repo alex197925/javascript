@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+    const api_url = "http://localhost:63342/javascript/js-complete-course/_shared/api.json"
+
+async function getHeroesData () {
+        let data = await fetch(api_url)
+        let main = await data.json()
+    console.log(main)
+
+}
+
+    getHeroesData ()
+
+
 })();
