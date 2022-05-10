@@ -12,5 +12,24 @@
 (function() {
 
     // your code here
+    
+    document.getElementById("run").addEventListener("click", function () {
+        const input1 = document.getElementById("pass-one").value
+        const input2 = document.getElementById("pass-two").value
+
+        if(input1 == "") {
+            alert("not")
+        }else if (input2 == "") {
+            alert ("Please enter confirm password")
+        }else if (input1 != input2) {
+           document.getElementById("pass-one").style.borderColor = "red"
+            document.getElementById("pass-two").style.borderColor = "red"
+
+        }else {
+            alert("Password Match!")
+            return true;
+        }
+
+    })
 
 })();
