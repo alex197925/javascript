@@ -10,7 +10,46 @@
 // You will have time to focus on it later.
 
 (function() {
+    const target = document.getElementById("target");
 
-    // your code here
+
+    // var body = document.getElementsByTagName("body")[0];
+
+    // create elements <table> and a <tbody>
+    const tbl = document.createElement("table");
+    const tblBody = document.createElement("tbody");
+
+    // cells creation
+    for (let j = 1; j <= 10; j++) {
+        // table row creation
+        const row = document.createElement("tr");
+
+        for (let i = 0; i < 1; i++) {
+            // create element <td> and text node
+            //Make text node the contents of <td> element
+            // put <td> at end of the table row
+            let cell = document.createElement("td");
+            let cellText = document.createTextNode( j );
+
+            cell.appendChild(cellText);
+            row.appendChild(cell);
+        }
+
+        //row added to end of table body
+        tblBody.appendChild(row);
+    }
+
+    // append the <tbody> inside the <table>
+    tbl.appendChild(tblBody);
+    // put <table> in the <body>
+    target.appendChild(tbl);
+    // tbl border attribute to
+    tbl.setAttribute("border", "2");
+
+
+
+
+
+
 
 })();
