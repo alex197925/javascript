@@ -11,6 +11,17 @@
 
 (function() {
 
+    let input1 = document.getElementById("pass-one")
+    let input2 = document.getElementById("pass-two")
+
     // your code here
+   document.getElementById("run").addEventListener("click", function () {
+if(input1.value === input2.value) {
+    console.log("Yes its works")
+}else {
+    input1.classList.add("error")
+    input2.classList.add("error")
+}
+   })
 
 })();

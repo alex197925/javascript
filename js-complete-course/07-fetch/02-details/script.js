@@ -11,4 +11,20 @@
 
 (() => {
     // your code here
+
+    const api_url = "http://localhost:3000/heroes"
+
+    const button = document.getElementById("run")
+    const target = document.getElementById("target");
+
+
+
+async function getHeroes () {
+        let  response = await fetch(api_url)
+        let data = await  response.json()
+        console.log(data)
+}
+    getHeroes ()
+
+
 })();

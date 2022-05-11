@@ -13,8 +13,6 @@
     const target = document.getElementById("target");
 
 
-    // var body = document.getElementsByTagName("body")[0];
-
     // create elements <table> and a <tbody>
     const tbl = document.createElement("table");
     const tblBody = document.createElement("tbody");
