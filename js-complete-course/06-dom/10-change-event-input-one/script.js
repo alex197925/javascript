@@ -13,13 +13,13 @@
 
     // your code here
 
-
+let max = 10
 
 
     const passwordInput = document.getElementById("pass-one")
     const counter = document.getElementById("counter")
 
-   document.getElementById("pass-one").addEventListener("input", function () {
+   document.getElementById("pass-one").addEventListener("keyup", function () {
 
    })
 
