@@ -13,14 +13,20 @@
 
     // your code here
 
-let max = 10
+    document.getElementById("pass-one").maxLength = "10";
+
+    const input = document.getElementById("pass-one");
+    const counter = document.getElementById("counter");
+
+    input.addEventListener("keyup", updateCounter);
 
 
-    const passwordInput = document.getElementById("pass-one")
-    const counter = document.getElementById("counter")
+    function updateCounter() {
+        let passValue = input.value;
+        let passLength = passValue.length;
 
-   document.getElementById("pass-one").addEventListener("keyup", function () {
+        counter.textContent = `${passLength}/10`;
+    }
 
-   })
 
 })();
